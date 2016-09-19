@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Dog Database: Small</title>
+    <meta name="viewport" content="widcsv axth=device-width, initial-scale=1.0">
+
+    <!-- =============================== CSS================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
+    <link rel="stylesheet" href="css/custom-styles.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" href="css/style-ie.css"/>
+    <![endif]--> 
+
+    <!-- Favicons ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- JS ================================================== -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.quicksand.js"></script>
+    <script src="js/jquery.custom.js"></script>
+
+    </head>
+
+    <body>
+
+    	<div class="color-bar-1"></div>
+        <div class="color-bar-2 color-bg"></div>
+        
+        <div class="container main-container">
+
+          <div class="row header"> <!-- Begin Header -->
+          
+            <!-- Logo ================================================== -->
+            <div class="span5 logo">
+                <h2 class="headerText">Happy Tails: Walk a dog</h2>
+                <h4>bringing dog lovers together from all walks of life</h4>
+            </div>
+            
+            <!-- Main Navigation ================================================= -->
+            <div class="span7 navigation">
+                <div class="navbar hidden-phone">
+                
+                <ul class="nav">
+
+                    <li><a href="index.htm">Home</a></li>
+
+                    <li class="dropdown">
+                        <a id="highlightChooseDog1" class="dropdown-toggle" data-toggle="dropdown" href="">Walk a dog<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="smallDogDatabase.htm">Small Dogs</a></li>
+                            <li><a href="mediumDogDatabase.htm">Medium Dogs</a></li>
+                            <li><a href="largeDogDatabase.htm">Large Dogs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="publicProfile.htm">View Public Profile</a></li>
+                    <li><a href="adopt.htm">Adopt</a></li>
+                    <li><a href="happyTailsContact.htm">Contact</a></li>
+                    <li><a href="landingPage.htm">Logout</a></li>
+                </ul>
+            </div>
+
+                <!-- Mobile Nav ================================================== -->
+                <form action="#" id="mobile-nav" class="visible-phone">
+                    <div class="mobile-nav-select">
+                    <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                        <option value="">Navigate...</option>
+                        <option value="index.htm">Home</option>
+                        <option value="">Walk a Dog</option>
+                            <option value="smallDogDatabase.htm">- Small Dogs</option>
+                             <option value="mediumDogDatabase.htm">- Medium Dogs</option>
+                            <option value="largeDogDatabase.htm">- Large Dogs</option>
+
+                        <option value="publicProfile.htm">View Public Profile</option>
+                        <option value="adopt.htm">Adopt</option>
+                        <li><a href="happyTailsContact.htm">Contact</a></li>
+                        <option value="landingPage.htm">Logout</option>
+                    </select>
+                    </div>
+                    </form>
+            </div>
+          </div><!-- End Header -->
+         
+
+        <!-- Page Content ================================================== --> 
+        <div class="row">
+
+            <!-- Gallery Items  ================================================== --> 
+            <div class="span12 gallery">
+
+                <ul id="filterOptions" class="gallery-cats clearfix">
+                    <li class="active"><a href="#" class="all">All</a></li> 
+                    <li><a href="#" class="illustration">Lazy</a></li>
+                    <li><a href="#" class="design">Energetic</a></li>
+                    <li><a href="#" class="video">Challenge</a></li>
+                </ul>
+
+                <div class="row clearfix">
+                    <ul class="gallery-post-grid holder">
+
+                        <!-- Gallery Item 1 -->
+                        <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/allie.jpg" class="item-zoom-link lightbox" title="Allie hanging out in the doctor's office" data-rel="prettyPhoto"></a>
+                                    <a href="smallDog1.htm" class="item-details-link"></a>
+                                </span>
+
+                            </span>
+                            <a href="smallDog1.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/allie.jpg" alt="Gallery"></a>
+
+                            <span class="project-details"> <a class="dogNameDatabase" href="smallDog1.htm">Allie</a> female | 6 mths | schnoodle
+                            </span>
+                        </li>
+
+                        <!-- Gallery Item 2 -->
+                        <li class="span3 gallery-item" data-id="id-2" data-type="design">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+
+                                    <a href="myImgs/smallDogs/ziggy.jpg" class="item-zoom-link lightbox" title="Kona hanging out at his part-time foster home" data-rel="prettyPhoto"></a>
+                                    <a href="smallDog2.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="smallDog2.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/ziggy.jpg" alt="Gallery"></a>
+
+                            <span class="project-details"> <a href="smallDog2.htm">Ziggy</a> male | 9 yrs old | schnoodle</span>
+                        </li>
+
+                        <!-- Gallery Item 3 -->
+                        <li class="span3 gallery-item" data-id="id-3" data-type="web">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/arnold.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"> <img class="dogDatabaseThumbnail" src="myImgs/smallDogs/arnold.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Arnold</a>male | 5 yrs old | beagle mix </span>
+                        </li>
+
+                        <!-- Gallery Item 4 -->
+                        <li class="span3 gallery-item" data-id="id-4" data-type="video">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/bailey.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"> <img class="dogDatabaseThumbnail" src="myImgs/smallDogs/bailey.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Bailey</a>female | 2 yrs old | schnauzer mix</span>
+                        </li>
+
+                        <!-- Gallery Item 5 -->
+                        <li class="span3 gallery-item" data-id="id-5" data-type="web illustration">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/nancy.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Nancy</a>female | 2 mths | chihuahua</span>
+                        </li>
+
+                        <!-- Gallery Item 6 -->
+                        <li class="span3 gallery-item" data-id="id-6" data-type="illustration design">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/louis.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/louis.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Louis</a>male | 8 mths | jack russell terrier </span>
+                        </li>
+
+                        <!-- Gallery Item 7 -->
+                        <li class="span3 gallery-item" data-id="id-7" data-type="design">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/buddy.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/buddy.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Buddy</a>male | 9 yrs old | pomeranian mix</span>
+                        </li>
+
+                        <!-- Gallery Item 8 -->
+                        <li class="span3 gallery-item" data-id="id-8" data-type="web video">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/cookie.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/cookie.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Cookie</a>male | 2.5 yrs old | mini-poodle mix </span>
+                        </li>
+
+                        <!-- Gallery Item 9 -->
+                        <li class="span3 gallery-item" data-id="id-9" data-type="design">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/summer.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/summer.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Summer</a>female | 4 mths | chihuahua russell mix</span>
+                        </li>
+
+                        <!-- Gallery Item 10 -->
+                        <li class="span3 gallery-item" data-id="id-10" data-type="web design">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/riley.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/riley.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Riley</a>male | 6 yrs old | boston terrier </span>
+                        </li>
+
+                        <!-- Gallery Item 11 -->
+                        <li class="span3 gallery-item" data-id="id-11" data-type="illustration">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/winston.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/winston.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Winston</a>male | 2 yrs old | yorkie </span>
+                        </li>
+
+                        <!-- Gallery Item 12 -->
+                        <li class="span3 gallery-item" data-id="id-12" data-type="illustration video">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="myImgs/smallDogs/phoebe.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                    <a href="gallery-single.htm" class="item-details-link"></a>
+                                </span>
+                            </span>
+                            <a href="gallery-single.htm"><img class="dogDatabaseThumbnail" src="myImgs/smallDogs/phoebe.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="gallery-single.htm">Phoebe</a>female | 11 yrs old | yorkie mix </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <ul>
+                    <li class="active"><a href="#">Prev</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+
+            </div><!-- End gallery list-->
+
+        </div><!-- End container row -->
+        
+        </div> <!-- End Container -->
+
+
+
+    <!-- FOOTER FOOTER FOOTER FOOTER FOOTER --> 
+
+         <div id="foot" class="footer-container"><!-- Begin Footer -->
+            <div class="container">
+                <div class="row footer-row">
+
+                    <div class="span3 footer-col">
+
+                        <h5 id="footerTitleOne">CONTACT</h5>
+                        
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/pages/SPCA-of-Tompkins-County/255433035902" class="social-icon facebook"></a></li>
+
+                            <li><a id="twitterPadding" href="https://twitter.com/SPCAofTC" class="social-icon twitter"></a></li>
+
+                        </ul>
+
+                        <address>
+                            <strong>SPCA of Tompkins County</strong><br />
+                            1640 Hanshaw Road<br />
+                            Ithaca, NY 14850<br />
+                        </address>
+                    </div>
+
+                    <div class="span3 footer-col">
+                        <h5 id="footerTitleTwo">TOMPKINS COUNTY SPCA Departments</h5>
+                            <strong>General Info:</strong>
+                            <br>info@spcaonline.com
+                            <br>(607) 257-1822
+
+                            <br><br><strong>Adoptions:</strong>
+                            <br>adoptions@spcaonline.com 
+                            <br>(607) 257-1822 ext. 221
+                    </div>
+
+                    <div class="span3 footer-col">
+                        <br><br><strong>Fundraising/Donations/Marketing</strong>
+                        <br>maggie@spcaonline.com or gifts@spcaonline.com
+                        <br>(607) 257-1822 ext. 232 or ext. 246
+
+                        <br><br><strong>Volunteer Opportunities:</strong> 
+                        <br>volunteer@spcaonline.com or gifts@spcaonline.com
+                        <br>(607) 257-1822 ext. 247 or ext. 246
+                    </div>
+
+                    <div class="span3 footer-col">
+                            <br><br><strong>Fostering Dogs</strong>
+                            <br>volunteer@spcaonline.com
+                            <br>(607) 257-1822 ext. 247
+
+                            <br><br><strong>Animal Cruelty Complaints: </strong>
+                            <br>animalcontrol@spcaonline.com
+                            <br>Phone: (607) 319-5067
+                            <br>Emergency/Off hours: (607) 592-6773
+                    </div>
+
+                </div>
+
+                <div class="row"><!-- Begin Sub Footer -->
+                    <div class="span12 footer-col footer-sub">
+                        <div class="row no-margin">
+                            <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                            <div class="span6">
+
+                                <span class="right">
+
+                                    Happy Tails Founders:  &nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.linkedin.com/in/sarah-shultz-66813783
+    ">Sarah Shultz</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.facebook.com/evan.willner">Evan Willner</a>&nbsp;&nbsp;&nbsp;
+
+                                </span>
+                            </di
+                        </div>
+                    </div>
+                </div><!-- End Sub Footer -->
+            </div>
+        </div><!-- End Footer -->
+        
+        <!-- Scroll to Top -->  
+        <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+        
+    </body>
+</html>

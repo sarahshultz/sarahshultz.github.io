@@ -1,0 +1,119 @@
+
+.studentFilm {
+	
+	background-color: #FFFFFF;
+	width: 300px;
+	margin: auto;
+    width: 50%;
+
+}
+
+.studentFilmDescription {
+	background-color: #000000;
+	margin: auto;
+    width: 50%;
+
+}
+
+.studentMultimedia {
+	background-color: #FFFFFF;
+
+	margin: auto;
+	width: 50%;
+}
+
+.photoAttributes {
+	width: 350px;
+	height: 220px;
+}
+
+#pprod {
+	widows: 350px;
+	height: 402px;
+}
+
+.internship {
+	width: 100%;
+	background-color: #FFFFFF;
+
+}
+
+.internshipPhoto {
+	height: 402px;
+	
+}
+
+#resumeTitle {
+	font-size: 300%;
+}
+
+.resume1 {
+	font-size: 200%;
+	color: #99CEC8;
+
+}
+
+.resume2 {
+	font-size: 150%;
+		color: #000000;
+
+}
+
+.resumeHeader {
+	color: #000000;
+}
+
+
+.resumePadding {
+	padding-top:50px; 
+}
+
+.mediaDates {
+	font-size: 145%;
+
+
+}
+
+.mediaEdit {
+	color: #4A4A4A;
+
+}
+
+.iSize {
+	height: 100px;
+}
+
+.aboutMe {
+	font-size: 120%;
+}
+
+.accentColor {
+	color: #99CEC8;
+}
+
+
+a:hover { 
+	color: #99CEC8;  
+}
+
+.jse {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+.internDes {
+	background-color: #99CEC8;
+	margin: auto;
+    width: 80%; 
+}
+
+.resume {
+float: right;
+}
+
+
+.internHeader {
+	color: #99cec8;
+}
+e

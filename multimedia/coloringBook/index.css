@@ -1,0 +1,147 @@
+
+@font-face {
+    font-family: titleFont;
+    src: url('fonts/MoonFlowerBold.ttf');
+}
+
+@font-face {
+    font-family: penFont;
+    src: url('fonts/AnacondasLight.ttf');
+}
+
+body {
+    background: url('img/desk.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mainBox {
+    width: 1350px;
+    height: 760px;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+#text {
+  
+}
+  .eachPaintBrush {
+
+    text-align: center;
+
+    width: 150px;
+    float: left;
+    padding-top: 300px;
+
+    font-family: penFont;
+    font-color: #FFFFFF;
+    font-size: 360%;
+
+ }
+
+ #picture{
+    width: 1200px;
+    height: 760px;
+    float: right;
+
+
+ }
+
+
+ #canvas{ 
+
+    width: 800px;
+    float:left; 
+        
+    cursor: crosshair ;
+
+  }
+
+  #canvasBG {
+    width: 800px;
+    height: 640px;
+
+    background: url('img/colorMoon.jpg') no-repeat;
+    background-size: 640px 640px;
+    background-position: center;
+
+  }
+
+#heading {
+
+    width: 850px;
+    height: 100px;
+
+    font-family: titleFont;
+    font-size: 590%;
+    padding-left: 65px;
+
+    background: -webkit-linear-gradient(#330099, #3333ff, #330066, #ccccff );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+ .eachPC {
+
+    float: left;
+     width: 70px;
+     height: 70px;
+     padding-top: 140px;
+
+ }
+
+  .eachPCTwo {
+
+    float: left;
+
+     width: 70px;
+     height: 70px;
+     padding-top: 175px;
+ }
+
+
+  .eachPC3 {
+
+    float: left;
+
+    padding-top: 210px;
+     width: 70px;
+     height: 70px;
+ 
+ }
+
+
+#penColor {
+
+    float: right;
+
+    padding-top: 300px;
+    width: 130px;
+    text-align: center;
+
+    font-family: penFont;
+    font-size: 500%;
+
+}
+
+
+#mistake {
+   font-size: 120%;
+    background: -webkit-linear-gradient(#330099, #3333ff, #330066 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#erase {
+
+    text-align: center;
+    font-color: #000000;
+    font-family: penFont;
+    font-size: 80%;
+  
+}

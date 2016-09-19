@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn Easy: Space Math</title>
+
+        <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+        <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+      
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+
+    <script src="modernizr.js"></script> 
+
+    <link href="assets/css/custom.css" rel="stylesheet"/>
+
+
+    <script>
+        
+         var tune = document.createElement('audio');
+            tune.src = "sound/powerUp.wav";
+            tune.play();
+        
+        window.addEventListener("load",eventWindowLoaded, false); 
+        
+        // loads the canvas window on page load
+        function eventWindowLoaded() {
+            canvasApp();   
+            
+            var tune = document.createElement('audio');
+            tune.src = "sound/veldt.mp3";
+            tune.play();
+                         
+            
+            
+        }
+
+        function canvasSupport() {
+            return Modernizr.canvas;    
+        }
+                
+        function canvasApp() {
+            
+           
+            if (!canvasSupport()) {
+                return; 
+            }
+    
+            var theCanvas = document.getElementById("canvasOne");
+            var context = theCanvas.getContext("2d");
+
+        
+            function getRandom (min, max)
+            { return Math.floor(Math.random()*(max-min)+min); }
+
+            var score = 0;
+            
+        
+
+            // array for x and y coordinates
+
+            var yCoords = new Array();
+            yCoords[0] = getRandom(-50,-900);   
+            yCoords[1] = getRandom(-10,-900);
+            yCoords[2] = getRandom(-20,-900);
+            yCoords[3] = getRandom(-70,-900);
+            yCoords[4] = getRandom(-90,-900); 
+            yCoords[5] = getRandom(-10,-900); 
+            yCoords[6] = getRandom(-70,-900);
+            yCoords[7] = getRandom(-10,-900);
+            yCoords[8] = getRandom(-20,-900);
+            yCoords[9] = getRandom(-90,-900);
+
+            var xCoords = new Array();
+            xCoords[0] = getRandom(10,900);
+            xCoords[1] = getRandom(10,900);
+            xCoords[2] = getRandom(10,900);
+            xCoords[3] = getRandom(10,900); 
+            xCoords[4] = getRandom(10,900);
+            xCoords[5] = getRandom(10,900); 
+            xCoords[6] = getRandom(10,900);
+            xCoords[7] = getRandom(10,900);
+            xCoords[8] = getRandom(10,900);
+            xCoords[9] = getRandom(10,900); 
+
+        
+            var planet1 = new Image();
+            planet1.src = "img/planet1.png";
+        
+            var planet2 = new Image();
+            planet2.src = "img/planet2.png";
+        
+            var planet3 = new Image();
+            planet3.src = "img/planet3.png";
+
+            var planet4 = new Image();
+            planet4.src = "img/planet4.png";
+
+            var planet5 = new Image();
+            planet5.src = "img/planet5.png";
+
+            var planet6 = new Image();
+            planet6.src = "img/planet6.png";
+
+            var planet7 = new Image();
+            planet7.src = "img/planet7.png";
+
+            var planet8 = new Image();
+            planet8.src = "img/planet8.png";
+
+            var planet9 = new Image();
+            planet9.src = "img/planet9.png";
+
+            var planet10 = new Image();
+            planet10.src = "img/planet10.png";
+
+
+            var spaceshipShooter = new Image();
+            spaceshipShooter.src = "img/spaceship.png";
+
+        
+            planet1.onload = function () {
+                        
+            
+
+            window.addEventListener("mousemove",movePlanet, true); 
+            
+ 
+
+            function gameLoop() {
+                window.setTimeout(gameLoop,60); // number indicates how fast the planets fall
+                drawCanvas();
+            }
+
+            function movePlanet(e) {
+                x = e.offsetX;
+            }
+                
+            var answer = getRandom(1,10);
+
+            function checkHit() {
+
+
+                for(var i = 0; i < 10; i++ ) { 
+
+                    if ((yCoords[i] + 75 > y && yCoords[i] + 75 < y + 262) && (xCoords [i] + 75 > x && xCoords[i] + 75 < x + 150))
+                    {
+
+                            if (i+1 == answer) {
+                                answer = getRandom(1,10);
+                                
+                                console.log(answer);
+                                score = score + 3;
+                                
+                                tune.src = "sound/correct.wav";
+                                tune.play();
+                                
+                            } else {
+                                score--;
+                                
+                                    tune.src = "sound/smash.wav";
+                                    tune.play();
+                            }
+
+                            yCoords[i] =-1000;
+                            xCoords[i] = getRandom(10, 600);
+
+                    }
+
+                } // end of for loop
+                
+               
+
+
+            } // checkHit
+            
+
+
+        //FALLING SPEED
+
+        function move() { 
+            for(var x = 0; x < 10; x++) // put up to 10 for 10 items
+            {
+                if (yCoords[x]<1450)
+                {
+                    yCoords[x] += 10;
+                }
+                else
+                {
+                    yCoords[x] =-100;
+                    xCoords[x] = getRandom(10, 600);
+                }
+            }
+             
+         } // move
+
+
+
+        var x = 0;
+        var y = 400
+
+
+
+        function drawCanvas() {
+        
+  
+            checkHit();
+            context.clearRect(0,0,1035,640);
+
+            context.drawImage(planet1,xCoords[0], yCoords[0]);
+            context.drawImage(planet2,xCoords[1], yCoords[1]);
+            context.drawImage(planet3,xCoords[2], yCoords[2]);
+            context.drawImage(planet4,xCoords[3], yCoords[3]);
+            context.drawImage(planet5,xCoords[4], yCoords[4]);
+            context.drawImage(planet6,xCoords[5], yCoords[5]);
+            context.drawImage(planet7,xCoords[6], yCoords[6]); 
+            context.drawImage(planet8,xCoords[7], yCoords[7]);
+            context.drawImage(planet9,xCoords[8], yCoords[8]);
+            context.drawImage(planet10,xCoords[9], yCoords[9]);
+            
+
+            //console.log(xCoords);
+            //console.log(yCoords);
+
+            context.drawImage(spaceshipShooter,x,y);
+
+            context.font="50px bodyFont";
+            context.fillStyle = "#5667FF";
+
+            // coordiantes of where to put the score 
+            context.fillText("Score:",50,100);
+            context.fillText(score,200,100);
+            
+            context.fillText("Match this number:", 570, 100);
+            context.fillStyle= "#FFFFFF";
+            context.fillText(answer, 950, 100);
+            
+            move();
+        
+        } // ends drawCanvas 
+
+            gameLoop();
+
+        } // planet
+
+    } // end of canvasApp function 
+
+    </script>
+
+    </head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Learn Easy</a> 
+            </div>
+          <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"> Last login : 30 April 2015 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust logoutLink">Logout</a> </div>
+
+        </nav> <!-- NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/kid.jpg" class="user-image img-responsive"/>
+					</li>
+					
+                    <li>
+                        <a  href="index.html"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    </li>
+                    
+                    <li>
+                        <a href="ui.html"><i class="fa fa-rocket fa-3x "></i> Space Math Game <span class="fa arrow"></span></a>
+                         <ul class="active-menu nav nav-second level">
+                            <li>
+                                <a href="ui.html"> Easy</a>
+                            </li>
+                                   
+                            <li>
+                                <a href="uiTwo.html"> Medium</a>
+                            </li>
+                                          
+                            <li>
+                                <a href="uiThree.html"> Hard</a>
+                            </li>
+                         </ul>
+                    </li>
+
+            
+					<li>
+                        <a  href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i> Activity Log</a>
+                    </li>	
+                  
+                    <li >
+                        <a  href="form.html"><i class="fa fa-edit fa-3x"></i> About </a>
+                    </li>				
+		
+                </ul>
+               
+            </div>
+            
+        </nav> <!-- /. NAV SIDE  -->
+
+        <div id="page-wrapper" >
+            <div id="page-inner">
+
+                <div class="row tagline">
+                    <div class="col-md-12">
+             
+                     <h2>Space Math [easy]</h2>   
+                        <h5>
+                            Directions: Using your mouse, match the correct number by hitting each planet with your spaceship!
+                            <br><br> For each number you match correctly, you earn one point.<br> For each number you guess incorrectly, you lose one point.
+                            <br><br> Play as long as you want to practice your math bulding skills.
+                            <br> Or if you are playing for time, see how many answers you can get right before the time runs out!
+                        </h5>
+                        
+                        <img class="chart" src="img/easy.png" alt="Smiley face">
+
+                        <hr>
+
+                    </div><!-- col-md-12 -->
+                </div><!-- /. ROW  -->
+       
+
+    
+                <div class="row">
+
+                    <div id="mainBox">
+
+                        <div id="canvasArea">
+                            <canvas id="canvasOne" width="1033" height="640" style="border:10px  solid #00CE6F;" >
+                                Your browser doesn't support Canvas.
+                            </canvas>  
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="panel back-dash">
+                                   <i class="fa fa-edit fa-3x"></i><strong> &nbsp; LEARN EASY</strong> <hr>
+                                    
+                                    <p id ="footerDescription">
+                                    An easily accessible website intended to connect students, teachers, and parents through online education. Our premeir game, "Space Math" is a fun and free alternative to traditional math comprehension books. With the goal to design a community of eager learners, Learn Easy is for everyone!
+                                        <p id="footerAbout">
+                                             Learn Easy was created by: Ava · Ian ·  Sarah
+                                            <br>For comments, questions and concerns · smeishultz@gmail.com         
+                                        </p>
+                                    </p> <!-- footerDescription -->
+                            </div> <!-- panel back-dash -->
+                        </div> <!-- col-sm-12 col-xs-12 -->
+                    </div> <!-- row -->
+ 
+        
+    </div> <!--PAGE  INNER  -->
+            </div> <!-- PAGE WRAPPER  -->
+        </div> <!-- WRAPPER  -->
+</body>
+</html>

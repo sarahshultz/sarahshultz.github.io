@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Volunteer Database</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS ================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css">
+
+
+
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- JS ================================================== -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
+ function signUpFunction () {
+    var signUp = window.confirm("Click OK to automatically sign up as a volunteer!");
+    if (signUp) {
+        window.alert ("You have successfully created a volunteer account!");
+        document.location.href = "index.htm"
+    }
+
+ } /* signUpFunction */
+
+ function volunteerHomepage () {
+    document.location = "index.htm"
+ }
+
+  function staffMemberHomepage () {
+    document.location = "indexAdmin.htm"
+ }
+
+</script>
+
+</head>
+
+<body class="home">
+    <!-- Color Bars (above header)-->
+	<div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container">
+    
+      <div class="row header"><!-- Begin Header -->
+      
+        <!-- Logo ================================================== -->
+        <div class="span5 logo">
+        	<h2 class="headerText"> HAPPY TAILS: TOMPKINS COUNTY SPCA </h2>
+            <h4> Bringing dog lovers together from all walks of life</h4>
+        </div>
+        
+        <!-- Main Navigation -->
+        <div class="span7 navigation">
+            <div class="navbar hidden-phone">
+            
+            <ul class="nav">
+
+                <li><a href="index.htm">VOLUNTEER SIGN UP</a></li>
+
+                <li><a href="index.htm">VOLUNTEER LOGIN</a></li>
+
+                <li><a href="indexAdmin.htm">STAFF LOGIN</a></li>
+
+                <li><a href="happyTailsContact.htm">CONTACT</a></li>
+            
+
+            </ul>
+
+        </div>
+
+            <!-- Mobile Nav ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                  
+                    <option value="index.htm"> SIGN UP</option>
+                    <option value="index.htm">VOLUNTEER LOGIN</option>
+                    <option value="indexAdmin.htm">STAFF LOGIN</option>
+                    <option value="happyTailsContact.htm">CONTACT</option>
+                </select>
+                </div>
+                </form>
+
+        </div>
+      </div><!-- End Header -->
+
+     <br>
+    <div class="row headline"><!-- Begin Headline -->
+
+        <div class="span4">
+        	<h3 class="headerText"> Volunteer Database </h3>
+
+            <div class="row">
+
+        <!-- Gallery Items
+        ================================================== --> 
+        <div class="span12 gallery">
+
+            <div class="row clearfix">
+                <ul class="gallery-post-grid holder">
+
+                    <!-- Gallery Item 1 -->
+                    <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="myImgs/volunteers/v1.jpg" class="item-zoom-link lightbox" title="design" data-rel="prettyPhoto"></a>
+                                <a href="publicProfile.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v1.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 2 -->
+                    <li class="span3 gallery-item" data-id="id-2" data-type="illustration">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="myImgs/volunteers/v2.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v2.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 3 -->
+                    <li class="span3 gallery-item" data-id="id-3" data-type="web">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="myImgs/volunteers/v3.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v3.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 4 -->
+                    <li class="span3 gallery-item" data-id="id-4" data-type="video">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v4.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 5 -->
+                    <li class="span3 gallery-item" data-id="id-5" data-type="web illustration">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v5.jpeg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 6 -->
+                    <li class="span3 gallery-item" data-id="id-6" data-type="illustration design">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v6.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 7 -->
+                    <li class="span3 gallery-item" data-id="id-7" data-type="design">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v7.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 8 -->
+                    <li class="span3 gallery-item" data-id="id-8" data-type="web video">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v8.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 9 -->
+                    <li class="span3 gallery-item" data-id="id-9" data-type="design">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v9.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 10 -->
+                    <li class="span3 gallery-item" data-id="id-10" data-type="web design">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v10.jpg" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 11 -->
+                    <li class="span3 gallery-item" data-id="id-11" data-type="illustration">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v11.png" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                    <!-- Gallery Item 12 -->
+                    <li class="span3 gallery-item" data-id="id-12" data-type="illustration video">
+                        <span class="gallery-hover-4col-cir hidden-phone hidden-tablet">
+                            <span class="gallery-icons">
+                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="gallery-single.htm" class="item-details-link"></a>
+                            </span>
+                        </span>
+                        <a href="gallery-single.htm"><img src="myImgs/volunteers/v12.png" class="vPic" alt="Gallery" class="img-circle"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <ul>
+                <li class="active"><a href="#">Prev</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Next</a></li>
+                </ul>
+            </div>
+
+        </div><!-- End gallery list-->
+
+    </div><!-- End container row -->
+
+
+    </div> <!-- End Container -->
+    </div>
+</div>
+
+<!-- FOOTER FOOTER FOOTER FOOTER FOOTER --> 
+
+     <div id="foot" class="footer-container"><!-- Begin Footer -->
+        <div class="container">
+            <div class="row footer-row">
+
+                <div class="span3 footer-col">
+
+                    <h5 id="footerTitleOne">CONTACT</h5>
+                    
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/pages/SPCA-of-Tompkins-County/255433035902" class="social-icon facebook"></a></li>
+
+                        <li><a id="twitterPadding" href="https://twitter.com/SPCAofTC" class="social-icon twitter"></a></li>
+
+                    </ul>
+
+                    <address>
+                        <strong>SPCA of Tompkins County</strong><br />
+                        1640 Hanshaw Road<br />
+                        Ithaca, NY 14850<br />
+                    </address>
+                </div>
+
+                <div class="span3 footer-col">
+                    <h5 id="footerTitleTwo">TOMPKINS COUNTY SPCA Departments</h5>
+                        <strong>General Info:</strong>
+                        <br>info@spcaonline.com
+                        <br>(607) 257-1822
+
+                        <br><br><strong>Adoptions:</strong>
+                        <br>adoptions@spcaonline.com 
+                        <br>(607) 257-1822 ext. 221
+                </div>
+
+                <div class="span3 footer-col">
+                    <br><br><strong>Fundraising/Donations/Marketing</strong>
+                    <br>maggie@spcaonline.com or gifts@spcaonline.com
+                    <br>(607) 257-1822 ext. 232 or ext. 246
+
+                    <br><br><strong>Volunteer Opportunities:</strong> 
+                    <br>volunteer@spcaonline.com or gifts@spcaonline.com
+                    <br>(607) 257-1822 ext. 247 or ext. 246
+                </div>
+
+                <div class="span3 footer-col">
+                        <br><br><strong>Fostering Dogs</strong>
+                        <br>volunteer@spcaonline.com
+                        <br>(607) 257-1822 ext. 247
+
+                        <br><br><strong>Animal Cruelty Complaints: </strong>
+                        <br>animalcontrol@spcaonline.com
+                        <br>Phone: (607) 319-5067
+                        <br>Emergency/Off hours: (607) 592-6773
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                        <div class="span6">
+
+                            <span class="right">
+
+                                Happy Tails Founders:  &nbsp;&nbsp;&nbsp;
+                                <a href="https://www.linkedin.com/in/sarah-shultz-66813783">Sarah Shultz</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.facebook.com/evan.willner">Evan Willner</a>&nbsp;&nbsp;&nbsp;
+
+                            </span>
+                        </di
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+        </div>
+    </div><!-- End Footer -->
+    
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+    
+</body>
+</html>
+ 

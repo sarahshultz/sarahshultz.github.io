@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Easy: Login | Sign Up</title>
+
+        <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+        <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <link href="assets/css/custom.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Learn Easy</a> 
+            </div>
+
+        </nav> <!-- /. NAV TOP  -->
+
+            <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+                </ul>
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>LEARN EASY: Free, accessible and fun!</h2>   
+                     </div>
+                </div> <!-- /. ROW  -->
+
+                 <hr />
+
+               <div class="row">
+                <div class="col-md-12">
+                    <!-- Form Elements -->
+                    <div class="panel panel-default">
+                 
+                        <div class="panel-body">
+
+
+                            <div class="row">
+
+                            <center>
+                        
+
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button>
+                      
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+                                        </div>
+
+                                         <div  class="modal-body">
+                                            <div class="name" class="form-group">
+                                                <label>First Name:</label>
+                                                <input class="form-control" placeholder="John" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+                                        <div class="modal-body">
+                                            <div class="name" class="form-group">
+                                                <label>Last Name:</label>
+                                                <input class="form-control" placeholder="Doe" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+                                        <div class="modal-body">
+                                            <div class=" name form-group">
+                                                <label>Email:</label>
+                                                <input class="form-control" placeholder="example@domain.com" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+                                        <div class="modal-body">
+                                            <div class="name" class="form-group">
+                                                <label>Choose a Password:</label>
+                                                <input class="form-control" placeholder="learnEasy123" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+                                        <div class="modal-body">
+                                            <div class="name" class="form-group">
+                                                <label>Re-Enter Password:</label>
+                                                <input class="form-control" placeholder="learnEasy123" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+                                        <div class="modal-footer">
+                                       
+                                           <a href="index.html" id="signUpButton" class="btn btn-info btn-lg">Submit</a>
+
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalTwo">Log In</button>
+
+                            <div class="modal fade" id="myModalTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                                <div class="modal-dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div cla
+                                        ss="modal-header">
+
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="yModalLabel">Log In</h4>
+                                        </div>
+
+                                          <div class="modal-body">
+                                            <div class="form-group name">
+                                                <label>Email Address:</label>
+                                                <input class="form-control" placeholder="johnDoe@domain.com" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+                                        <div class="modal-body">
+                                            <div class="form-group name">
+                                                <label>Password:</label>
+                                                <input class="form-control" placeholder="learnEasy" />
+                                            </div>
+                                        </div> <!-- modal-body -->
+
+
+                                      
+                                        <div class="modal-footer">
+
+                                            <a href="index.html" id="signUpButton" class="btn btn-info btn-lg">Submit</a>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      
+                                        </div> <!-- modal-footer -->
+                                    </div> <!-- modal-content -->
+                                </div> <!-- modal-dialog -->
+                            </div>
+                        </div> <!-- row -->
+                  
+                     <!-- End Modals-->
+
+
+                            </center>
+                                         
+                                </div> <!-- row -->
+                            </div> <!-- panel-body -->
+                        </div> <!-- panel panel-default -->
+                    </div><!-- End Form Elements -->
+         
+
+                        <hr>
+                        
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="panel back-dash">
+                                   <i class="fa fa-dashboard fa-3x"></i><strong> &nbsp; LEARN EASY</strong>
+                                    
+                                    <p id ="footerDescription">
+                                    An easily accessible website intended to connect students, teachers, and parents through online education. Our premeir game, "Space Math" is a fun and free alternative to traditional math comprehension books. With the goal to design a community of eager learners, Learn Easy is for everyone!
+                                        <p id="footerAbout">
+                                             Learn Easy was created by: Ava · Ian ·  Sarah
+                                            <br>For comments, questions and concerns · smeishultz@gmail.com 
+                                        </p>
+                                    </p> <!-- footerDescription -->
+                            </div> <!-- panel back-dash -->
+                        </div> <!-- col-sm-12 col-xs-12 -->
+                    </div> <!-- row -->
+        </div><!-- Row -->
+        
+            </div><!-- Page Inner -->
+              
+    </div> <!-- Page Wrapper -->           
+</div> <!-- /. WRAPPER  -->
+
+
+
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+   
+</body>
+</html>

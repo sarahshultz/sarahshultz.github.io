@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+		<head>
+	
+				<title> Dean's Blue Hole </title>
+					<script src="modernizr.js"></script> 
+					<link type="text/css" rel = "stylesheet" href = "project4.css" />
+			<script>
+
+				window.addEventListener("load",eventWindowLoaded, false); 
+		
+				function eventWindowLoaded() {
+					canvasApp();	
+				}
+			
+				function canvasSupport() {
+					return Modernizr.canvas;	
+				}
+				
+				function canvasApp() {
+
+					if (!canvasSupport()) {
+					 return; } 
+
+					var theCanvas = document.getElementById("canvasOne");
+					var context = theCanvas.getContext("2d");
+
+
+					// BACKGROUND IMAGE
+					var bgImage = new Image(); 
+					bgImage.src = "images/new.jpg";
+					bgImage.onload = function () {
+					context.drawImage (bgImage, 0,0);  // place the image - actual image, x and y position  
+
+
+					// CIRCLE //
+					context.beginPath();
+					context.fillStyle = "#FFFFFF";
+					context.arc(175,590,137,0,2*Math.PI); // x, y, radius start, stop
+					context.fillStyle = '#39f5e7';
+     				//context.fill(); // fills the inside of the triangle
+      				context.lineWidth = 3;
+      				context.strokeStyle = '#9fdd3e';
+      				context.stroke();
+
+
+					// GUILLAUME NERY //  
+					context.fillStyle = "#FFFFFF"; 
+					context.font = "35px gnFont"; 
+					context.fillText ("Guillaume Ner", 65, 545); 
+
+					context.fillStyle = "#59f4d1"; 
+					context.font = "14px gnDes"; 
+					context.fillText ("A French World-class free diver.", 65, 570); 
+
+					context.fillStyle = "#38e7a4"; 
+					context.fillText ("that has produced a beautiful film ", 63, 585);
+
+					context.fillStyle = "#a9eaba"; 
+					context.fillText ("of himself base-jumping ", 96, 600);
+
+					context.fillStyle = "#22cba5"; 
+					context.fillText ("at Dean's Blue Hole. ", 110, 615);
+
+					context.fillStyle = "#FFFFFF"; 
+					context.fillText ("View the video at: ", 110, 643);
+
+					context.fillStyle = "#22cba5"; 
+					context.fillText ("http://youtu.be/uQITWbAaDx0", 90, 658);
+
+
+					// CONTENT TITLE // 
+					context.fillStyle = "#FFFFFF"; // color of font  
+					context.font = "80px titleFont"; // size of the cont, and corresponding variable in CSS
+					context.fillText ("Dean's Blue Hole", 800, 140); // what you want the text to actually say and it's placement on the screen
+			
+					// CONTENT //
+
+					context.font = "27px descriptionFont"; 
+
+					context.fillStyle = "#a9eaba"; 
+					context.fillText ("The deepest known sinkhole on Earth!", 900,200); 
+
+					context.fillStyle = "#59f4d1";  
+					context.fillText ("At an astounding 663 feet deep, ", 900,235); 
+
+
+					context.fillStyle = "#22cba5"; 
+					context.fillText ("it might not be everyone's dream vacation spot. ",900,270);
+
+
+					context.fillStyle = "#22cba5"; 
+					context.fillText ("But, for the brave and the crazy", 900,305);
+
+
+					context.fillStyle = "#3AB16B"; 
+					context.fillText ("free divers and base jumpers out there... ", 900,340);
+
+
+					context.fillStyle = "#59f4d1"; 
+					context.fillText ("this sinkhole is located in the Bay, ", 900,375);
+
+
+					context.fillStyle = "#a9eaba";  
+					context.fillText ("west of Claerence Town, in the Bahamas.", 900,410);
+
+
+					context.fillStyle = "#3AB16B"; 
+					context.fillText ("While free diving to the bottom", 900,445);
+
+
+					context.fillStyle = "#38e7a4";  
+					context.fillText ("of this massive sinkhole is impossible,", 900,480);
+
+
+					context.fillStyle = "#22cba5";  
+					context.fillText ("The location itslef, is breathtaking.", 900,515);
+
+
+					context.fillStyle = "#59f4d1";  
+					context.fillText ("So wether you're a fish in the water ", 900,550);
+
+
+					context.fillStyle = "#38e7a4";  
+					context.fillText ("or just like to lay in the sand,", 900,585);
+
+					context.fillStyle = "#a9eaba";  
+					context.fillText ("Dean's Blue Hole is the place to be! ", 900,620);
+					
+					} // bgImage
+
+				} // end of canvasApp 
+		
+			</script>
+		</head>
+
+	<body>
+	        <canvas id="canvasOne" width="1350" height="760" style="border:10px solid #bef874;"> 
+	            Your browser doesn't support Canvas.
+	        </canvas>    
+
+	        <div id="titleFont"> s
+	        	<div id = "descriptionFont"> s
+	        		<div id = "gnFont">d
+	        			  <div id = "gnDes">d
+	        			  </div>
+	        			</div>
+	        	 </div> 
+	        </div>
+	</body>
+</html>

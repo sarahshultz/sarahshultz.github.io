@@ -1,0 +1,71 @@
+@font-face {
+	font-family: titleFont;
+	src: url('');
+}
+
+@font-face {
+	font-family: scoreFont;
+	src: url('');
+}
+
+body {
+	background-color: #000000;
+	cursor: none;
+	
+}
+
+#mainBox{
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#canvasArea {
+	width: 1000px;
+	height: 640px;
+	float: left;
+
+	background-image:url('img/spaceBackground.jpg');
+
+}
+
+#scoreBox {
+	width: 300px;
+	height: 46px;
+	float: left;
+
+
+	font-family: scoreFont;
+	color: #FFFFFF;
+	font-size: 200%;
+}
+
+#story{
+
+	width: 264px;
+	height: 690px;
+	float: right;
+
+	font-family: titleFont;
+	text-align: center;
+	color: #98f844;
+	font-size: 300%;
+	
+}
+
+#storyDetails {
+
+	float: bottom;
+
+	width: 264px;
+	height: 400px;
+
+color: #FFFFFF;
+
+	font-family: scoreFont;
+	text-align: center;
+	font-size: 50%;
+
+	
+
+}

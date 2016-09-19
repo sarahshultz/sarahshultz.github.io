@@ -1,0 +1,623 @@
+
+/*============== FONTS ========================*/
+
+
+@font-face {
+    font-family: titleFont;
+    src: url('fonts/keepCalm.ttf');
+}
+
+@font-face {
+    font-family: subTitleFont;
+    src: url('fonts/roboto.ttf');
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url('fonts/comicSans.ttf');
+}
+
+
+/*==============  RANDOM ========================*/
+
+p {
+    font-family: bodyFont;
+}
+
+.title {
+    font-family: titleFont;
+     background-color: #00CE6F;
+}
+
+h3 {
+    color: #5667FF;
+}
+
+h5 {
+    font-family: subTitleFont;
+    font-size: 33px;
+    color: #FFFFFF;
+}
+
+#activityLog {
+    color: #1F255C;
+}
+
+#clickGame {
+    color: #FFFFFF;
+}
+
+.tagline {
+    /*background-color: #29417F;*/
+    padding-left: 30px;
+}
+
+.modal-footer{ text-align:center;
+    }
+/*============== 'About' Boxes ========================*/
+
+#whoWeAre {
+    background-color: #4f4f4f;
+ 
+
+}
+
+.panel-primary, .panel-success, .noti-box {
+    border-color: #00CE6F;
+    border-width: 5px;
+    border-style: dashed;
+}
+
+#theFuture {
+    background-color: #4f4f4f;
+    color: #FFFFFF;
+}
+
+
+/*============== Canvas ========================*/
+
+.chart {
+    width: 800px;
+    height: 170px;
+}
+#canvasArea {
+    width: 1053px;
+    height: 650px;
+    float: left;
+    cursor: none;
+
+    background-image:url('img/spaceBackground.jpg');
+
+}
+
+#canvasOne {
+    border-color: #FFFFFF;
+
+}
+
+/*============== Footer ========================*/
+#footerAbout {
+    color: #00CE6F;
+    text-align: right;
+    font-size: 20px;
+}
+
+#footerDescription {
+    color: #FFFFFF;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+
+/*============== Sign Up Attributes =======================*/
+
+.name {
+    width: 200px;
+}
+
+/*============== Space Math =======================*/
+
+#canvasArea {
+    margin-left: 45px;
+}
+
+
+/*============== Link Attributes =======================*/
+
+
+
+#hereLink {
+    color: #5667FF;
+}
+
+#hereLink:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*============== Buttons ========================*/
+
+#signUpButton{
+   width: 130px;
+   height: 100px;
+   border-radius: 30%;
+   padding-top: 35px;
+}
+
+
+/*============== Home Page ========================*/
+
+
+#clickHereGame, #clickHereGameTwo, #activityLog {
+    margin-top: 30px;
+
+}
+
+#accountInfo {
+    background-color: #00CE6F;
+    color: #5667FF;
+}
+
+#clickHereGameTwo {
+    color: #FFFFFF;
+}
+
+#activityLog {
+    color: #FFFFFF;
+
+}
+
+#outsideInfo, #bottomTitle {
+    background-color: #009B50;
+}
+
+#topClass {
+    margin-left: 50px;
+    background-color: #000000;
+}
+
+#email {
+    color: #FFFFFF;
+}
+
+
+#activityLog:hover {
+    color: #5667FF;
+    text-decoration: none;
+    
+}
+#barChartColor {
+    color: #5667FF;
+}
+
+
+#clickHereGame {
+    margin-left: 10px;
+
+}
+
+
+#gamesComplete{
+    font-size: 30px;
+    background-color: #009B50;
+
+
+}
+
+#topScores {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+
+/*============== About Page ========================*/
+
+#panel1, #panel2 {
+    width: 450px;
+    margin-left: 75px;
+}
+
+#panel1 {
+
+}
+
+/*============== About Page ========================*/
+
+#qPanel {
+
+    background-color: #00CE6F;
+    width: 80%;
+
+    margin-left: 10%;
+}
+
+
+/*============== GENERAL STYLES ========================*/
+
+
+.logoutLink {
+    background-color: #00CE6F;
+}
+.logoutLink:hover {
+    background-color: #000000;
+}
+body {
+    font-family: titleFont;
+    background-color: #4F4F4F;
+}
+
+.foot {
+    background-color: #000000;
+}
+
+ #NavigationBar {
+    width: 100%;
+    background:#BABABA;
+}
+
+#page-wrapper {
+    padding: 15px 15px;
+    min-height: 600px;
+    background:#F3F3F3;
+   
+}
+#page-inner {
+    width:100%;
+    margin:10px 20px 10px 0px;
+    background-color:#5683C4!important;
+    padding:10px;
+ 
+}
+
+.text-center {
+    text-align:center;
+}
+.no-boder {
+    border:1px solid #f3f3f3;
+}
+h2 {
+    color: #00CE6F;
+}
+h4 {
+    padding-top:10px;
+}
+.square-btn-adjust {
+    border: 0px solid transparent; 
+   -webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+
+}
+p {
+    font-size:16px;
+    line-height:25px;
+    padding-top:20px;
+}
+/*============================================== DASHBOARD STYLES =============================================*/
+/* behind number of games completed, etc */
+.panel-back {
+    background-color:#F8F8F8;
+    height: 200px;
+}
+
+.noti-box {
+    width: 97.75%;
+    min-height: 160px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.noti-box .icon-box {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-box p{
+    margin: 0 0 3px;
+}
+
+.main-text {
+    font-size: 25px;
+    font-weight:600;
+}
+
+.set-icon {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+}
+.bg-color-green {
+    background-color: #00CE6F;
+    color: #fff;
+}
+ .bg-color-blue {
+    background-color: #A95DF0;
+    color: #fff;
+}
+  .bg-color-red {
+    background-color: #DB0630;
+    color: #fff;
+}
+  .bg-color-brown {
+    background-color: #B94A00;
+    color: #fff;
+}
+
+
+.icon-box-right {
+    display: block;
+    float: right;
+    margin: 0 15px 10px 0;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-temp-back {
+    background: #8702A8;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+ .main-temp-back .text-temp {
+font-size: 40px;
+}
+
+.back-dash {
+    padding:20px;
+    font-size:20px;
+    font-weight:500;
+      -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+   
+    color:#fff;
+    background-color: #4F4F4F;
+    
+ 
+
+}
+    .back-dash p {
+        padding-top:16px;
+        font-size:13px;
+        color:#fff;
+        line-height:25px;
+        text-align:justify;
+    }
+    .back-footer-green {
+    background-color: #009B50;
+    border-top: 0px solid #fff;
+}
+     .back-footer-red {
+    background-color: #AF0000;
+    border-top: 0px solid #fff;
+}
+     .color-bottom-txt {
+   color: #000;
+font-size: 16px;
+line-height: 30px;
+}
+     /*CHAT PANEL*/
+ .chat-panel .panel-body {
+height: 450px;
+overflow-y: scroll;
+}
+ .chat-box {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ .chat-box li {
+margin-bottom: 15px;
+padding-bottom: 5px;
+border-bottom: 1px dotted #808080;
+}
+ .chat-box li.left .chat-body {
+margin-left: 90px;
+}
+ .chat-box li .chat-body p {
+margin: 0;
+color: #8d8888;
+}
+.chat-img>img {
+    margin-left:20px;
+}
+
+/*============================================== MENU STYLES   =============================================*/
+
+
+.user-image {
+    margin: 25px auto;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+max-height:170px;
+max-width:170px;
+}
+
+/* Learn Easy text at top of page */
+.navbar-cls-top .navbar-brand {
+color: #fff;
+background: #00CE6F;
+width: 260px;
+text-align: center;
+height: 60px;
+font-size: 30px;
+font-weight: 700;
+}
+
+.active-menu {
+    background-color:#5683C4!important;
+}
+
+.arrow {
+    float: right;
+}
+
+.fa.arrow:before {
+    content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important;
+}
+
+.nav-second-level li a {
+    padding-left: 37px;
+}
+
+.nav-third-level li a {
+    padding-left: 55px;
+}
+.sidebar-collapse , .sidebar-collapse .nav{
+	background:none;
+}
+.sidebar-collapse .nav {
+	padding:0;
+}
+
+/* sid dashboard attributes */
+.sidebar-collapse .nav > li > a {
+	color:#fff;
+	background:#202020;
+	text-shadow:none;
+	
+}
+.sidebar-collapse > .nav > li > a {
+	padding:15px 10px;
+}
+
+.sidebar-collapse > .nav > li {
+	border-bottom: 1px solid rgba(107, 108, 109, 0.19);
+}
+.sidebar-collapse .nav > li > a:hover,
+.sidebar-collapse .nav > li > a:focus {
+	
+	background:#0A0A0A;
+	outline:0;
+}
+
+.nav-second-level > li > a:before ,
+.nav-third-level > li > a:before {
+	content:"";
+	display:block;
+	position:absolute;
+	left:20px;
+	width:15px;
+	height:1px;
+	background:#ff0000;
+	top:20px;
+}
+.nav-second-level > li > a:after,
+.nav-third-level > li > a:after {
+	content:"";
+	display:block;
+	position:absolute;
+	left:20px;
+	width:1px;
+	height:100%;
+	background:#00000;
+	top:0px;
+	z-index:10;
+}
+.nav-second-level  > li:last-child > a:after,
+.nav-third-level  > li:last-child > a:after {
+	height:50%;
+}
+.nav-third-level > li > a:after,
+.nav-third-level > li > a:before  {
+	left:40px;
+}
+.navbar-side {
+	border:none;
+	background-color: #202020;
+	
+}
+.navbar-cls-top {
+	background:#4F4F4F d;
+	border-bottom:none;
+	
+}
+.navbar-cls-top .navbar-brand:hover {
+
+    background: #000000;
+    color:#fff;
+
+}
+
+.navbar-default {
+    border:0px solid black;
+    background-color: #4F4F4F;
+         
+}
+.navbar-header {
+    background: #A70303;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #B40101;
+}
+.navbar-default .navbar-toggle {
+border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #FFF;
+}
+.nav > li > a > i {
+    margin-right:10px;
+}
+/*============================================== UI ELEMENTS STYLES     =============================================*/
+.btn-circle {
+width: 50px;
+height: 50px;
+padding: 6px 0;
+ -webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+font-size: 12px;
+line-height: 1.428571429;
+}
+
+/*============================================== MEDIA QUERIES   =============================================*/
+ 
+ @media(min-width:768px) {
+
+     #page-wrapper{
+        margin: 0 0 0 260px;
+        padding: 15px 30px;
+        min-height: 1200px;
+
+        background-color: #5683C4;
+    }
+	
+	
+.navbar-side {
+    z-index: 1;
+    position: absolute;
+    width: 260px;
+}
+
+.navbar {
+ border-radius: 0px; 
+}
+
