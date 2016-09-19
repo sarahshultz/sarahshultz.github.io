@@ -129,11 +129,13 @@ a,
 Form styles
 ------------------------------------------------------------------- */
 
+
+
 .form-control {
 	font-family: "Inconsolata", sans-serif;
-	text-transform: uppercase;
+
 	letter-spacing: 0.1em;
-	font-size: 11px;
+	font-size: 14px;
 	height: 33px;
 	border: 1px solid #b2b2b2;
 	-webkit-border-radius: 2px;
@@ -142,7 +144,8 @@ Form styles
 }
 
 .form-control:focus {
-	border-color: #CACACA;
+	border-color: #99CEC8;
+	border-width: .3em;
 }
 
 /* Form sizes */
