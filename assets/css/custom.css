@@ -8,6 +8,21 @@
 
 }
 
+#parkProd {
+	height: 400px;
+	width: 730px;
+}
+
+#photoView {
+	color: #99CEC8;
+
+}
+
+#photoView:hover {
+	color: #ffffff;
+	
+}
+
 .studentFilmDescription {
 	background-color: #000000;
 	margin: auto;
