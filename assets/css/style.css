@@ -9,9 +9,6 @@ Version: 1.0.4
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
 
 
-
-
-
 /* ------------------------------------------------------------------
 CUSTOM CSS
 ------------------------------------------------------------------ */
@@ -20,6 +17,11 @@ CUSTOM CSS
 @import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
 
 /* 2E148C */
+
+
+.photoDiaryCategory {
+	
+}
 
 #titlePage {
 	color: #ffffff;
@@ -59,6 +61,7 @@ font-family: 'Oxygen Mono', monospace;
 	font-size: 270%
 
 }
+
 
 /* ------------------------------------------------------------------
 General Styles
