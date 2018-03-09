@@ -331,7 +331,7 @@ Buttons
 
 .btn.btn-w:hover, .btn.btn-w:focus {
 	background: white;
-	color: #111;
+	color: #2E148C;
 }
 
 .btn.btn-border-w {
@@ -362,13 +362,13 @@ Buttons
 }
 
 .btn.btn-d:hover, .btn.btn-d:focus {
-	background: #111111;
+	background: #2E148C;
 }
 
 .btn.btn-border-d {
 	background: transparent;
 	border: 2px solid #111;
-	color: #111;
+	color: #2E148C;
 }
 
 .btn.btn-border-d:hover {
@@ -404,43 +404,6 @@ Buttons
 	padding: 4px 19px;
 }
 
-/* ------------------------------------------------------------------
-Progress bars
-------------------------------------------------------------------- */
-
-.progress {
-	overflow: visible;
-	height: 4px;
-}
-
-.progress-title {
-	margin-top: 0;
-}
-
-.progress-bar {
-	position: relative;
-	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	    -ms-border-radius: 4px;
-	     -o-border-radius: 4px;
-	        border-radius: 4px;
-}
-
-.progress-bar.pb-dark {
-	background: #111;
-}
-
-.progress-bar span {
-	position: absolute;
-	padding: 4px 0px;
-	display: block;
-	top: -28px;
-	right: 0;
-	opacity: 0;
-	line-height: 12px;
-	font-size: 12px;
-	color: #777;
-}
 
 /* ------------------------------------------------------------------
 Tabs and Accordion
