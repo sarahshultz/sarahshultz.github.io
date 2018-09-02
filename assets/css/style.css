@@ -18,6 +18,10 @@ CUSTOM CSS
 
 /* 2E148C */
 
+a:active { 
+    background-color: #ffffff;
+}
+
 
 .photoDiaryCategory {
 	
@@ -35,7 +39,6 @@ CUSTOM CSS
 .customDescripFont {
 	font-size: 100%;
 font-family: 'Oxygen Mono', monospace;
-
 
 }
 
@@ -431,6 +434,7 @@ Tabs and Accordion
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
 	background: #eee;
+	
 }
 
 .tab-content {
@@ -1699,6 +1703,8 @@ Reset bootstrap navigation styles for small screens
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+
 
 /* -------------------------------------------------------------------
 Responsive Media Querries
