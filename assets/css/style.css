@@ -31,6 +31,15 @@ a:active {
 	color: #ffffff;
 }
 
+.headerFontOnly {
+	font-family: 'Mr Bedfort', cursive;
+	font-size: 300%;
+	color: #000000;
+}
+.subFontOnly {
+		font-family: 'Oxygen Mono', monospace;
+
+}
 .titleFont {
 	font-family: 'Mr Bedfort', cursive;
 	font-size: 1000%
