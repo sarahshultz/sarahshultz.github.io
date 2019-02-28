@@ -18,6 +18,8 @@ CUSTOM CSS
 
 /* 2E148C */
 
+
+
 a:active { 
     background-color: #ffffff;
 }
@@ -926,11 +928,13 @@ Navigation
 	margin: 0;
 }
 
+
+
 #nav > li > a {
 	font-family: "Dosis", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 24px;
+	font-size: 20px;
 	color: #FDFDFD;
 }
 
